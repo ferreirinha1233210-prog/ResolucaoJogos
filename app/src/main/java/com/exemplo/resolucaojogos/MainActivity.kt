@@ -216,7 +216,7 @@ class MainActivity : Activity() {
         val comando = if (pct == 100) {
             "cmd game reset $pkg"
         } else {
-            "cmd game set --mode performance --downscale 0.${pct / 10} $pkg && cmd game mode performance $pkg"
+           "cmd game set --mode 2 --downscale 0.${pct / 10} $pkg && cmd game mode 2 $pkg"
         }
         Thread {
             val saida = executar(comando)
